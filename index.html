@@ -2,168 +2,212 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Curriculum Vitae - Mesakh</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS tambahan -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <h1>Curriculum Vitae</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mesakh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Mesakh</h2>
-    <p>UX Lead / Product Designer</p>
+    <!-- Header -->
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Curriculum Vitae</h1>
+            <h2 class="h3">Mesakh</h2>
+            <p class="lead text-muted">UX Lead / Product Designer</p>
+            <a href="#kontak" class="btn btn-primary">Hubungi Saya</a>
+        </div>
+    </header>
 
-    <hr>
+    <main class="container py-5">
 
-    <h2>Profil</h2>
+        <!-- Profil & Data Pribadi -->
+        <div class="row g-4 mb-5" id="profil">
+            <div class="col-md-7">
+                <div class="card h-100">
+                    <div class="card-header fw-bold">Profil</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Saya adalah seorang Product Designer dengan pengalaman lebih dari
+                            8 tahun di bidang UI/UX Design. Saya memiliki pengalaman dalam
+                            merancang dan membangun produk digital dari tahap awal hingga launch.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    <p>
-        Saya adalah seorang Product Designer dengan pengalaman lebih dari
-        8 tahun di bidang UI/UX Design. Saya memiliki pengalaman dalam
-        merancang dan membangun produk digital dari tahap awal hingga launch.
-    </p>
+            <div class="col-md-5">
+                <div class="card h-100">
+                    <div class="card-header fw-bold">Data Pribadi</div>
+                    <div class="card-body p-0">
+                        <table class="table table-striped mb-0">
+                            <tbody>
+                                <tr>
+                                    <th>Nama</th>
+                                    <td>Mesakh</td>
+                                </tr>
+                                <tr>
+                                    <th>Profesi</th>
+                                    <td>UX Lead</td>
+                                </tr>
+                                <tr>
+                                    <th>Bidang</th>
+                                    <td>UI/UX Design</td>
+                                </tr>
+                                <tr>
+                                    <th>Lokasi</th>
+                                    <td>Jakarta, Indonesia</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <h2>Data Pribadi</h2>
+        <!-- Pendidikan -->
+        <section class="mb-5">
+            <h3 class="judul-section">Pendidikan</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Sistem Informasi</h5>
+                    <p class="card-text text-muted">Universitas Dian Nuswantoro</p>
+                </div>
+            </div>
+        </section>
 
-    <table border="1">
-        <tr>
-            <th>Informasi</th>
-            <th>Detail</th>
-        </tr>
+        <!-- Pengalaman Kerja -->
+        <section class="mb-5" id="pengalaman">
+            <h3 class="judul-section">Pengalaman Kerja</h3>
+            <div class="list-group">
+                <div class="list-group-item p-4">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h5 class="mb-1">UX Lead - Telkom Indonesia</h5>
+                        <span class="badge bg-primary align-self-start">2022 - Sekarang</span>
+                    </div>
+                    <ul class="mt-2 mb-0">
+                        <li>Memimpin aktivitas UX Design pada beberapa product squad.</li>
+                        <li>Mengelola dan memberikan arahan kepada tim UI/UX Designer.</li>
+                        <li>Melakukan UX Research dan UX Audit.</li>
+                        <li>Mengembangkan Design System dan UX Pattern.</li>
+                    </ul>
+                </div>
+                <div class="list-group-item p-4">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h5 class="mb-1">UX Designer - Telkom Indonesia</h5>
+                        <span class="badge bg-secondary align-self-start">2020 - 2022</span>
+                    </div>
+                    <ul class="mt-2 mb-0">
+                        <li>Merancang produk digital dari tahap konsep hingga launch.</li>
+                        <li>Membuat user flow, wireframe, prototype, dan UI design.</li>
+                        <li>Melakukan usability research dan evaluasi produk.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <tr>
-            <td>Nama</td>
-            <td>Mesakh</td>
-        </tr>
+        <!-- Keahlian & Minat -->
+        <div class="row g-4 mb-5" id="keahlian">
+            <div class="col-md-6">
+                <h3 class="judul-section">Keahlian</h3>
+                <span class="badge text-bg-primary">UI Design</span>
+                <span class="badge text-bg-primary">UX Design</span>
+                <span class="badge text-bg-primary">Product Design</span>
+                <span class="badge text-bg-primary">UX Research</span>
+                <span class="badge text-bg-primary">Interaction Design</span>
+                <span class="badge text-bg-primary">Design System</span>
+                <span class="badge text-bg-primary">Prototyping</span>
+                <span class="badge text-bg-primary">Figma</span>
+                <span class="badge text-bg-primary">HTML5</span>
+            </div>
+            <div class="col-md-6">
+                <h3 class="judul-section">Minat</h3>
+                <span class="badge text-bg-secondary">Product Design</span>
+                <span class="badge text-bg-secondary">Teknologi</span>
+                <span class="badge text-bg-secondary">Fotografi</span>
+                <span class="badge text-bg-secondary">Musik</span>
+                <span class="badge text-bg-secondary">Piano</span>
+            </div>
+        </div>
 
-        <tr>
-            <td>Profesi</td>
-            <td>UX Lead</td>
-        </tr>
+        <!-- Proyek -->
+        <section class="mb-5" id="proyek">
+            <h3 class="judul-section">Proyek</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Proyek</th>
+                            <th>Peran</th>
+                            <th>Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>OCA Interaction</td>
+                            <td>UX Lead</td>
+                            <td>Platform omnichannel untuk komunikasi dua arah.</td>
+                        </tr>
+                        <tr>
+                            <td>OCA AI</td>
+                            <td>UX Lead</td>
+                            <td>Platform untuk membuat chatbot berbasis AI.</td>
+                        </tr>
+                        <tr>
+                            <td>OCA Blast</td>
+                            <td>UX Lead</td>
+                            <td>Platform untuk massive messaging.</td>
+                        </tr>
+                        <tr>
+                            <td>Vestia</td>
+                            <td>Product Designer</td>
+                            <td>Platform peer-to-peer lending.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-        <tr>
-            <td>Bidang</td>
-            <td>UI/UX Design</td>
-        </tr>
+        <!-- Kontak -->
+        <section id="kontak">
+            <div class="card text-center bg-light">
+                <div class="card-body py-4">
+                    <h3 class="card-title">Kontak</h3>
+                    <p class="card-text">Silakan hubungi saya melalui email:</p>
+                    <a href="mailto:admesakh@gmail.com" class="btn btn-outline-primary">admesakh@gmail.com</a>
+                </div>
+            </div>
+        </section>
 
-        <tr>
-            <td>Lokasi</td>
-            <td>Jakarta, Indonesia</td>
-        </tr>
-    </table>
+    </main>
 
-    <h2>Pendidikan</h2>
+    <footer class="bg-dark text-white text-center py-3">
+        <small>&copy; 2026 Mesakh</small>
+    </footer>
 
-    <ul>
-        <li>
-            Sistem Informasi - Universitas Dian Nuswantoro
-        </li>
-    </ul>
-
-    <h2>Pengalaman Kerja</h2>
-
-    <ol>
-        <li>
-            <strong>UX Lead - Telkom Indonesia</strong>
-            <br>
-            2022 - Sekarang
-
-            <ul>
-                <li>Memimpin aktivitas UX Design pada beberapa product squad.</li>
-                <li>Mengelola dan memberikan arahan kepada tim UI/UX Designer.</li>
-                <li>Melakukan UX Research dan UX Audit.</li>
-                <li>Mengembangkan Design System dan UX Pattern.</li>
-            </ul>
-        </li>
-
-        <br>
-
-        <li>
-            <strong>UX Designer - Telkom Indonesia</strong>
-            <br>
-            2020 - 2022
-
-            <ul>
-                <li>Merancang produk digital dari tahap konsep hingga launch.</li>
-                <li>Membuat user flow, wireframe, prototype, dan UI design.</li>
-                <li>Melakukan usability research dan evaluasi produk.</li>
-            </ul>
-        </li>
-    </ol>
-
-    <h2>Keahlian</h2>
-
-    <ul>
-        <li>UI Design</li>
-        <li>UX Design</li>
-        <li>Product Design</li>
-        <li>UX Research</li>
-        <li>Interaction Design</li>
-        <li>Design System</li>
-        <li>Prototyping</li>
-        <li>Figma</li>
-        <li>HTML5</li>
-    </ul>
-
-    <h2>Proyek</h2>
-
-    <table border="1">
-        <tr>
-            <th>Proyek</th>
-            <th>Peran</th>
-            <th>Deskripsi</th>
-        </tr>
-
-        <tr>
-            <td>OCA Interaction</td>
-            <td>UX Lead</td>
-            <td>
-                Platform omnichannel untuk komunikasi dua arah.
-            </td>
-        </tr>
-
-        <tr>
-            <td>OCA AI</td>
-            <td>UX Lead</td>
-            <td>
-                Platform untuk membuat chatbot berbasis AI.
-            </td>
-        </tr>
-
-        <tr>
-            <td>OCA Blast</td>
-            <td>UX Lead</td>
-            <td>
-                Platform untuk massive messaging.
-            </td>
-        </tr>
-
-        <tr>
-            <td>Vestia</td>
-            <td>Product Designer</td>
-            <td>
-                Platform peer-to-peer lending.
-            </td>
-        </tr>
-    </table>
-
-    <h2>Minat</h2>
-
-    <ul>
-        <li>Product Design</li>
-        <li>Teknologi</li>
-        <li>Fotografi</li>
-        <li>Musik</li>
-        <li>Piano</li>
-    </ul>
-
-    <h2>Kontak</h2>
-
-    <p>
-        Email:
-        <a href="mailto:admesakh@gmail.com">
-            admesakh@gmail.com
-        </a>
-    </p>
-
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
