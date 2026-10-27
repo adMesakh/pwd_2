@@ -46,8 +46,38 @@ header h1 {
 .badge {
     font-size: 0.9rem;
     font-weight: 500;
-    margin: 0 4px 8px 0;
     padding: 8px 12px;
+}
+
+/* ===== Layout dengan Grid & Flexbox ===== */
+
+/* Profil (kiri) dan Data Pribadi (kanan) */
+.grid-profil {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 24px;
+}
+
+/* Keahlian dan Minat, dua kolom sama lebar */
+.grid-dua {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+/* Jabatan di kiri, tahun di kanan */
+.pengalaman-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Daftar badge yang otomatis turun baris */
+.daftar-badge {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 /* Tampilan di layar kecil (HP) */
