@@ -80,13 +80,33 @@ header h1 {
     gap: 8px;
 }
 
-/* Tampilan di layar kecil (HP) */
-@media (max-width: 576px) {
+/* ===== Responsif: layar kecil (di bawah 768px) ===== */
+@media (max-width: 767.98px) {
+    body {
+        font-size: 15px;
+    }
+
     header h1 {
         font-size: 2rem;
     }
 
     .judul-section {
         font-size: 1.4rem;
+    }
+
+    /* Kolom-kolom grid menjadi satu kolom (bertumpuk) */
+    .grid-profil,
+    .grid-dua {
+        grid-template-columns: 1fr;
+    }
+
+    /* Tahun pindah ke bawah jabatan */
+    .pengalaman-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .list-group-item {
+        padding: 16px !important;
     }
 }
